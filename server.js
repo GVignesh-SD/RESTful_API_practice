@@ -93,6 +93,7 @@ app.post('/products', async (req,res) => {
 
 
 mongoose.set("strictQuery",false)
+// MONGO URL in env file
 mongoose.connect(process.env.MONGO)
 .then(() => {
     console.log('connected to MongoDB')
